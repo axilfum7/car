@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    justify-content: space-around;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 32px;
+    color: #a55c30;
+}
+
+.logo > span {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #232730;
+}
+.menu > li:active {
+    color: #a55c30;
+    font-weight: 60=0;
+}
+.car {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 88px;
+}
+.line {
+    width: 9px;
+    height: 261px;
+    background-color: orange;
+}
+
+.services {
+    font-weight: 700;
+    font-size: 64px;
+    color: #232730;
+    width: 30%;
+}
+.photo {
+    display: flex;
+    position: relative;
+}
+.car_image {
+    position: absolute;
+    border: none;
+    top: 40px;
+    right: 100px;
+}
+.about {
+    display: flex;
+    justify-content: space-around;
+}
+.about_text {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: space-around;
+}
+.about_text > h1 {
+    color: #a55c30;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+}
+.about_text > p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%;
+    color: #232730;
+}
+.black {
+    display: flex;
+    position: relative;
+    top: 200px;
+    width: 100%;
+    height: 755px;
+    background-image: url(./Group\ 1083.png);
+    /* background-repeat: no-repeat; */
+}
