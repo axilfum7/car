@@ -1,99 +1,186 @@
-* {
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+*{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-
+body{
+    font-family: Arial, sans-serif;
+}
 header{
     width: 100%;
     padding: 8px;
     display: flex;
     justify-content: space-around;
 }
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-.logo {
+.logo{
     font-weight: 700;
     font-size: 32px;
     color: #a55c30;
+    font-family: "Lora", serif;
 }
-
-.logo > span {
+.logo span{
     font-weight: 400;
     font-style: italic;
 }
-
-.menu {
+.menu{
     list-style-type: none;
     display: flex;
-    gap: 50px;
+    gap: 48px;
     font-size: 16px;
     font-weight: 400;
     color: #232730;
+} 
+.menu>li:active{
+    font-weight: 600;
+    color: #A55C30;
+    font-size: 16px;
 }
-.menu > li:active {
-    color: #a55c30;
-    font-weight: 60=0;
+.line{
+    width: 9px;
+    height: 261px;
+    background-color: #F8D7A4;
 }
-.car {
+.car{
     display: flex;
     justify-content: space-around;
     position: relative;
     top: 88px;
 }
-.line {
-    width: 9px;
-    height: 261px;
-    background-color: orange;
-}
-
-.services {
+.services{
     font-weight: 700;
     font-size: 64px;
-    color: #232730;
     width: 30%;
+
 }
-.photo {
+.photo{
     display: flex;
     position: relative;
 }
-.car_image {
+.car_img{
     position: absolute;
-    border: none;
     top: 40px;
     right: 100px;
 }
-.about {
+.about{
     display: flex;
     justify-content: space-around;
+    position: relative;
+    top: 100px;
 }
-.about_text {
+.about_text{
     display: flex;
     flex-direction: column;
-    width: 30%;
     justify-content: space-around;
+    width: 40%;
+    font-family: "Nunito Sans", sans-serif;
 }
-.about_text > h1 {
-    color: #a55c30;
+.about_text>h1{
+    color: #A55C30;
     font-weight: 700;
     font-size: 40px;
-    line-height: 100%;
 }
-.about_text > p {
+.about_text>p{
     font-weight: 400;
     font-size: 16px;
     line-height: 145%;
     color: #232730;
 }
-.black {
+.services-section {
+    margin-top: 200px;
+    background: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+.services-section h1 {
+    font-size: 48px;
+    color: #A55C30;
+    margin-bottom: 40px;
+}
+.services-container {
     display: flex;
-    position: relative;
-    top: 200px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.service-card {
+    width: 300px;
+    text-align: center;
+}
+.service-card img {
+    width: 60px;
+    margin-bottom: 20px;
+}
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.service-card p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.fleet-section {
+    background: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+.fleet-section h1 {
+    font-size: 48px;
+    color: #A55C30;
+    margin-bottom: 40px;
+}
+.fleet-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.fleet-card {
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+.fleet-card img {
     width: 100%;
-    height: 755px;
-    background-image: url(./Group\ 1083.png);
-    /* background-repeat: no-repeat; */
+    height: auto;
+    margin-bottom: 20px;
+}
+.fleet-card h3 {
+    color: #A55C30;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.fleet-card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #555;
+}
+.fleet-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #A55C30;
+    font-weight: 600;
+}
+
+.stats-section {
+    background: #232730;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 40px 0;
+}
+.stats-section .stat-box h2 {
+    font-size: 48px;
+    color: #fff;
+}
+.stats-section .stat-box p {
+    font-size: 16px;
+    color: #A55C30;
 }
